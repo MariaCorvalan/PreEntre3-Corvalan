@@ -1,0 +1,75 @@
+@import '../base/listas';
+@import '../base/extends';
+
+/* Page Nosotros */
+
+.nosotros-pag {
+    background-image: url(../images/fondo-nosotros.jpg);
+    background-position: bottom 10px right;
+}
+.about__items-container {
+    width: 75%;
+    margin: auto;
+}
+
+
+.about__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about__item:first-child {
+    margin-top: 4.5rem; 
+    margin-bottom: 5rem;
+}
+
+.about__item:last-child {
+    padding-bottom: 3rem;
+}
+
+.about__item img {
+    width: 18.8rem;
+}
+
+.about__item:first-child div {
+    margin-left: 4.5rem;
+    width: 57%;
+}
+
+.about__item:last-child div {
+    margin-left: 4.5rem;
+    width: 80%;
+}
+@media screen and (max-width:800px) { /* modo tablet */
+    .about__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__item div {
+        width: fit-content;
+    }
+
+    .about__item div {
+        text-align: center;
+        width: 80%;
+    }
+
+    .about__item:first-child div {
+        margin-left: 0;
+    }
+    
+    .about__item:last-child div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:500px) { /* modo celular */
+    .about__item  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

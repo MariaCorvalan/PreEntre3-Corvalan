@@ -1,0 +1,37 @@
+/* CONTACTOS BACKGROUND */
+#bg-contacto {
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto {
+    background-color: #1b2a4e;
+    min-height: 500px;
+    position: relative;
+}
+
+/* CONTACTOS FORMULARIO */
+
+.contact-section {
+    width: 50%;
+    margin: auto;
+}
+
+#titulo-formulario img {
+    width: 90%;
+}
+
+.boton {
+    background-color: nth($colores-principales , 2 );
+    color: nth($colores-principales , 3 );
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: nth($colores-principales , 3 );
+    color: nth($colores-principales , 2 );
+}
+
+.footer {
+    background-color: nth($colores-principales , 4 );
+}

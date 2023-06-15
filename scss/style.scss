@@ -1,0 +1,21 @@
+@import './components/reset';
+@import './base/mixins';
+@import './components/header';
+@import 'base/extends';
+@import 'base/listas';
+@import './components/contacts';
+@import './components/equipo';
+@import './components/unete';
+@import './components/nosotros';
+@import './components/portfolio';
+@import './components/ventas';
+@import './components/services';
+
+
+/* Carousel imágenes */
+
+.carousel-inner {
+    max-height: 39rem;
+    width: 97%;
+    padding-left: 3%;
+}

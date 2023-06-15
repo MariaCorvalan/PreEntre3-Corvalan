@@ -1,0 +1,29 @@
+@import '../base/listas';
+@import '../base/extends';
+
+header {
+    @extend %font-size;
+    background-color: nth($colores-principales , 1 );
+}
+
+/* Navbar */
+#menu li>a {
+    @extend %font-size;
+    /*Bold: negrita*/
+    color: #090800;
+}
+
+#menu form>button {
+    @extend %font-size;
+}
+
+.suscribir {
+    background-color: nth($colores-principales, 2 );
+    color: nth($colores-principales, 3 );
+}
+
+.suscribir:hover {
+    background-color: nth($colores-principales, 3 );
+    color: nth($colores-principales, 2 );
+
+}

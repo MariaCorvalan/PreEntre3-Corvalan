@@ -1,0 +1,68 @@
+/* Page Unete */
+@import '../base/listas';
+@import '../base/extends';
+
+.container-img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+
+    /*Nos permite determinar los espaciados entre los elementos*/
+    @include tablet {
+        /* modo tablet */
+        width: 95%;
+        /* Ancho */
+        grid-template-columns: repeat(2, 1fr);
+        /*Esto es para que se repita solo 2 veces*/
+        grid-gap: 10px;
+        /*Espaciado - márgen*/
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1; /*Que tenga solo 1 espacio*/
+    }
+}
+
+.container-img .box-img figure {
+    @extend %medidas;
+}
+
+.container-img .box-img img {
+    @extend %medidas;
+    object-fit: cover;
+    /*Para que la img no se distorsione*/
+}
+
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+
+.unete {
+    background-color: nth($colores-principales , 5);
+}
+
+.form-sect {
+    background-color: nth($colores-principales , 5);
+}
+
+.title-unete {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

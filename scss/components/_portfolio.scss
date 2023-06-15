@@ -1,0 +1,26 @@
+@import '../base/listas';
+@import '../base/extends';
+
+/* Page Portfolio */
+
+.container-port {
+    background-image: url(../images/fondo-marketing.jpg);
+    padding-bottom: 50px;
+}
+
+.title {
+    color: nth($colores-principales, 6 );
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.card-text {
+    color: nth($colores-principales, 7 );
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-body {
+    background: nth($colores-principales, 8 );
+}
+
+.portfolio {
+    width: 200px;
+}

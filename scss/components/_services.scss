@@ -1,0 +1,43 @@
+.container-services {
+    width: 75%;
+    margin: 3rem auto;
+
+    .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2.75rem;
+    grid-row-gap: 6rem;
+
+        .services {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 32%;
+            }
+
+            div {
+                margin-left: 1.5rem;
+                width: 55%;
+            }
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .services {
+                img {
+                    width: 30%;
+                }
+                div {
+                    
+                    width: fit-content;
+                }
+            }
+        }
+        @include tablet {
+            
+        }
+    }
+}
